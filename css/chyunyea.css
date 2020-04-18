@@ -1,0 +1,284 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+/*header*/
+.header-class{
+    min-height: 100vh;
+    background-image:url(https://images.unsplash.com/photo-1556038024-07f7daf0b84f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+.header-class a {
+    color: white;
+}
+.header-class a:hover{
+    color:#fd5b4c;
+    text-decoration: none;
+}
+/*nav*/
+.navbar-brand {
+    font-size: 20pt;
+}
+.navbar-nav a{
+    color: white!important;
+    font-size: 16pt;
+}
+.navbar-nav a:hover {
+    color: #fd5b4c!important;
+}
+/*解決nav擋住*/
+:target::before{
+    content: "";
+    display: block;
+    height:50px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+/*項目標題*/
+h1{
+    color:#fd5b4c;
+    text-align: center;
+}
+h5 {
+    font-weight: normal;
+    font-size: 16pt;
+    color:#87929a;
+    text-align: center;
+    margin-bottom:25px;
+}
+/*news*/
+.news img {
+    width: 100%;
+}
+.news p{
+    line-height: 30pt;
+}
+.newstitle{
+    font-size: 16pt;
+    color:#ec887f;
+}
+/*about*/
+.about img {
+    width: 100%;
+}
+.about p{
+    line-height: 30pt;
+}
+.bg-cover{
+    background-size: cover;
+    background-position:bottom center;
+}
+.bg-attachment{
+    background-attachment: fixed;
+}
+/*works*/
+.works iframe{
+    width:100%;
+    height: 320px;
+    filter:grayscale(1);
+}
+.works iframe:hover {
+    filter:grayscale(0);
+}
+ @media (max-width: 767.98px) {	
+    .works iframe{
+        height:320px;
+        width:90%;
+        margin:0 5%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .works iframe{
+        height:200px;
+         width:98%;
+        margin:0 1%;
+    }
+}
+/*設定頁尾*/
+#footer{
+	font-size:14px;
+	background-color:#172323;
+	color:#87929a;
+	padding:2%;
+    overflow:hidden;
+}
+.copyright a{
+    color: #87929a;
+}
+.copyright a:hover{
+    color: #fd5b4c;
+}
+/*=============================================課程資訊
+*/
+.courses p{
+    line-height: 30pt;
+}
+.coursestitle {
+    font-size: 16pt;
+    color:#ec887f;
+}
+/*courses*/
+.courses img{
+    width:100%;
+}
+.courses {
+    width: 90%;
+}
+.text-block{
+    background-color:white;
+    padding:10px;
+}
+/*=============================================多媒體影像製作
+*/
+/*youtube*/
+.youtube { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    overflow: hidden; 
+} 
+.youtube iframe, .youtube object, .youtube embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+/*story*/
+[class^="story-"]{
+    position: relative;
+}
+[class^="title-"]{
+    font-size:28px;
+    position: absolute;
+    width:200px;
+    text-align: center;
+    background-color:#fd5b4c;
+    padding:5px;
+    color:white;
+}
+.story .col-12{
+    background-color: rgb(185, 230, 231);
+    padding:30px;
+}
+.story .col-md-6{
+    background-color: rgb(185, 230, 231);
+    padding:30px;
+    border: white 10px solid;
+}
+.title-1{
+    left:5%;
+    top:-20px;
+}
+.title-2{
+    left:5%;
+    top:-20px;
+}
+/*service*/
+.serviceicon {
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    position: relative;
+}
+/*poster*/
+.divOne{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.divTwo{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(185, 230, 231);
+    position: relative;
+}
+.divThree{
+    height:200px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.divTwo:before{
+    content: '';
+    position: absolute;
+    border-bottom: 100px solid rgb(185, 230, 231);
+    border-right: 98vw solid transparent;
+    top:-100px;
+}
+.divTwo:after{
+    content: '';
+    position: absolute;
+    border-top: 100px solid rgb(185, 230, 231);
+    border-left: 98vw solid transparent;
+    bottom:-100px;
+    z-index: 1;
+}
+.name{
+    position: absolute;
+    top:50%;
+    right:7%;
+    z-index: 1;
+}
+.name p{
+    font-size:40pt;
+    font-weight: bold;
+}
+.poster {
+    position: relative;
+}
+.poster1 img{
+    z-index: 1;
+    position: absolute;
+    top:1%;
+    left:15%;
+    width:25%;
+    border:white solid 10px;
+}
+.poster1 img:hover,
+.poster3 img:hover{
+    filter: grayscale(100%);
+}
+.poster3 img{
+    z-index: 1;
+    position: absolute;
+    top:30%;
+    left:55%;
+    width:25%;
+    border:white solid 10px;
+}
+@media (max-width: 767.98px) {	
+    .poster1 img{
+    z-index: 1;
+    position: absolute;
+    top:20px;
+    left:100px;
+    width:50%;
+    }
+    .poster3 img{
+    z-index: 1;
+    position: absolute;
+    top:50%;
+    left:100px;
+    width:50%;
+    border:white solid 10px;
+    }
+    .divTwo:before{
+    border-right: 94vw solid transparent;
+    }
+    .divTwo:after{
+    border-left: 94vw solid transparent;
+    }
+}
